@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddle Social by Smaar | Opening Soon</title>
+    <meta name="description" content="Something exciting is coming to our colony! Paddle Social - A new place to play, connect & belong in Vijayapuri Colony, Tarnaka.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/fev.png">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Custom JS -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="asset/logo.png" alt="Paddle Social">
+        </a>
+        <nav class="header-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#coaches">Coaches</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="rtm.html">RTM</a>
+            <a href="private-events.html">Private Events</a>
+            <a href="sponsor.html">Sponsorship</a>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="#" class="btn btn-primary" style="display: none;">Book a Court</a> <!-- Hidden on very small screens, let's keep it visible normally by putting it outside mobile nav -->
+        <div style="margin-left: auto;" class="desktop-only-btn">
+             <a href="#" class="btn btn-primary">Book a Court</a>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html" class="active">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#coaches">Coaches</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="rtm.html">RTM</a>
+        <a href="private-events.html">Private Events</a>
+        <a href="sponsor.html">Sponsorship</a>
+        <a href="#" class="btn btn-primary" style="margin-top: 20px;">Book a Court</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1622384755106-25867a5b3a4a?q=80&w=2000&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-label">Something Exciting Is Coming To Our Colony!</span>
+            <h1 style="font-size: 72px;">OPENING SOON!</h1>
+            <h2 style="color: var(--neon-lime); margin-bottom: 20px;">PICKLEBALL COURT</h2>
+            <p>A new place to play, connect & belong. Get ready for epic rallies, new friendships & endless fun!</p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="#offers" class="btn btn-primary">Special Opening Offers</a>
+                <a href="tel:8885072259" class="btn btn-outline">Call 8885072259</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <span class="hero-label" style="border:none; padding:0; font-size:16px;">An initiative by Shehzan Mohammed, Founder, Smaar</span>
+                    <h2 style="font-size: 48px; margin-bottom: 20px; color: var(--neon-lime);">Let's Build a Stronger, Healthier Community—Together!</h2>
+                    <p style="font-size: 18px; color: var(--text-gray); margin-bottom: 20px;">
+                        We believe pickleball is more than just a sport—it's a lifestyle. Paddle Social by Smaar was built to provide players of all ages with premium facilities and an unmatched social experience right in Vijayapuri Colony, Tarnaka.
+                    </p>
+                    <a href="tel:8885072259" class="btn btn-outline">Contact Us For Details</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1681320349479-79a0225d5d85?q=80&w=800&auto=format&fit=crop" alt="Playing Pickleball" style="width: 100%; border-radius: 20px; border: 2px solid var(--dark-gray);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Play / Programs -->
+    <section class="section" id="features" style="background-color: var(--dark-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Paddle Social?</h2>
+                <p>Everything you need for the perfect pickleball experience.</p>
+            </div>
+            <div class="grid-4" style="text-align: center;">
+                <div class="card">
+                    <i class="fa-solid fa-table-tennis-paddle-ball card-icon"></i>
+                    <h3>Premium Court</h3>
+                    <p>State-of-the-art playing surface designed for optimal performance and safety.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-people-group card-icon"></i>
+                    <h3>Fun For All Ages</h3>
+                    <p>Whether you're 8 or 80, pickleball is easy to learn and fun to master.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-person-running card-icon"></i>
+                    <h3>Stay Active, Stay Social</h3>
+                    <p>A great workout combined with an amazing community atmosphere.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-handshake-angle card-icon"></i>
+                    <h3>Meet. Play. Connect.</h3>
+                    <p>Build new friendships and connections every time you step on the court.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memberships Section -->
+    <section class="section" id="memberships">
+        <div class="container">
+            <div class="section-header">
+                <h2>Membership Plans</h2>
+                <p>Join the club to unlock exclusive perks, early booking access, and discounted rates.</p>
+            </div>
+            <div class="grid-2" style="max-width: 900px; margin: 0 auto;">
+                <div class="card" style="border: 2px solid var(--dark-gray); text-align: center;">
+                    <h3>The Rally Plan</h3>
+                    <div style="font-size: 48px; font-weight: bold; margin: 20px 0; color: var(--white); font-family: 'Oswald', sans-serif;">$99<span style="font-size: 16px; color: var(--text-gray);">/month</span></div>
+                    <ul style="list-style: none; text-align: left; margin-bottom: 30px; color: var(--text-gray);">
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> 7-day advanced booking</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> 10% off court rentals</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> Free paddle rentals</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">Join Rally</a>
+                </div>
+                <div class="card" style="border: 2px solid var(--neon-lime); text-align: center; transform: scale(1.05); background: linear-gradient(145deg, #1a1a1a, #0a0a0a);">
+                    <div style="background-color: var(--neon-lime); color: var(--black); padding: 5px 15px; border-radius: 20px; display: inline-block; font-size: 12px; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;">Most Popular</div>
+                    <h3>The Smash Plan</h3>
+                    <div style="font-size: 48px; font-weight: bold; margin: 10px 0 20px; color: var(--neon-lime); font-family: 'Oswald', sans-serif;">$149<span style="font-size: 16px; color: var(--text-gray);">/month</span></div>
+                    <ul style="list-style: none; text-align: left; margin-bottom: 30px; color: var(--text-gray);">
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> 14-day advanced booking</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> 20% off court rentals</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> Unlimited Open Play access</li>
+                        <li style="margin-bottom: 15px;"><i class="fa-solid fa-check" style="color: var(--neon-lime); margin-right: 10px;"></i> Priority registration for clinics</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Join Smash</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="asset/logo.png" alt="Paddle Social by Smaar" style="height: 40px; margin-bottom: 20px;">
+                    <p>A new place to play, connect & belong. An initiative by Shehzan Mohammed, Founder, Smaar.</p>
+                    <div style="margin-top: 15px; color: var(--neon-lime);">
+                        <p><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i> Vijayapuri Colony, Tarnaka</p>
+                        <p><i class="fa-solid fa-phone" style="margin-right: 10px;"></i> <a href="tel:8885072259" style="color: var(--neon-lime);">8885072259</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#memberships">Memberships</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="rtm.html">Tournaments (RTM)</a></li>
+                        <li><a href="private-events.html">Private Events</a></li>
+                        <li><a href="sponsor.html">Sponsorships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Paddle Social. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

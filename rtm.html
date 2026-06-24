@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments & Standings | Paddle Social</title>
+    <link rel="icon" type="image/png" href="asset/fev.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
+    <style>
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--dark-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .leaderboard-table th {
+            background-color: #1a1a1a;
+            color: var(--neon-lime);
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+        }
+        .leaderboard-table tr:last-child td {
+            border-bottom: none;
+        }
+        .rank-badge {
+            background-color: var(--black);
+            color: var(--white);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 1px solid var(--neon-lime);
+        }
+        .rank-1 { background-color: #FFD700; color: #000; border-color: #FFD700; }
+        .rank-2 { background-color: #C0C0C0; color: #000; border-color: #C0C0C0; }
+        .rank-3 { background-color: #CD7F32; color: #000; border-color: #CD7F32; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <img src="asset/logo.png" alt="Paddle Social">
+        </a>
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#programs">Programs</a>
+            <a href="index.html#coaches">Coaches</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="rtm.html" class="active">RTM</a>
+            <a href="private-events.html">Private Events</a>
+            <a href="sponsor.html">Sponsorship</a>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <div style="margin-left: auto;" class="desktop-only-btn"><a href="#" class="btn btn-primary">Book a Court</a></div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a href="index.html">Home</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="rtm.html" class="active">RTM</a>
+        <a href="private-events.html">Private Events</a>
+        <a href="sponsor.html">Sponsorship</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1622384755106-25867a5b3a4a?q=80&w=2000&auto=format&fit=crop');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-label">Championship Series</span>
+            <h1>Road to the Majors</h1>
+            <p>Compete in our exclusive tournament series, accumulate points, and qualify for the Paddle Social Major League Roster.</p>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Standings</h2>
+                <p>The top players across our competitive circuits. Points are updated weekly after every official tournament.</p>
+            </div>
+            
+            <div style="overflow-x: auto;">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player Name</th>
+                            <th>DUPR Rating</th>
+                            <th>Points</th>
+                            <th>Events Played</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="rank-badge rank-1">1</span></td>
+                            <td><strong>Sarah Jenkins</strong></td>
+                            <td>4.5+</td>
+                            <td style="color: var(--neon-lime); font-weight: bold;">1,250</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge rank-2">2</span></td>
+                            <td><strong>Marcus Chen</strong></td>
+                            <td>4.2 - 4.5</td>
+                            <td style="color: var(--neon-lime); font-weight: bold;">1,100</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge rank-3">3</span></td>
+                            <td><strong>David Rossi</strong></td>
+                            <td>4.5+</td>
+                            <td style="color: var(--neon-lime); font-weight: bold;">980</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">4</span></td>
+                            <td>Elena Rodriguez</td>
+                            <td>3.8 - 4.2</td>
+                            <td>850</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">5</span></td>
+                            <td>James Wilson</td>
+                            <td>3.8 - 4.2</td>
+                            <td>720</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="margin-top: 0; border-top: none;">
+                <img src="asset/logo.png" alt="Paddle Social" style="height: 30px; margin-bottom: 15px;"><br>
+                &copy; 2026 Paddle Social. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Paddle Social</title>
+    <link rel="icon" type="image/png" href="asset/fev.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js" defer></script>
+    <style>
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .accordion-item {
+            background-color: var(--dark-gray);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .accordion-header {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            user-select: none;
+            transition: background-color 0.3s;
+        }
+        .accordion-header:hover {
+            background-color: rgba(217, 245, 0, 0.05);
+            color: var(--neon-lime);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: var(--black);
+        }
+        .accordion-inner {
+            padding: 20px 25px;
+            color: var(--text-gray);
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo"><img src="asset/logo.png" alt="Paddle Social"></a>
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="faqs.html" class="active">FAQs</a>
+            <a href="rtm.html">RTM</a>
+            <a href="private-events.html">Private Events</a>
+            <a href="sponsor.html">Sponsorship</a>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+        <div style="margin-left: auto;" class="desktop-only-btn"><a href="#" class="btn btn-primary">Book a Court</a></div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <a href="index.html">Home</a>
+        <a href="faqs.html" class="active">FAQs</a>
+        <a href="rtm.html">RTM</a>
+        <a href="private-events.html">Private Events</a>
+        <a href="sponsor.html">Sponsorship</a>
+    </div>
+
+    <section class="hero" style="min-height: 40vh;">
+        <div class="hero-bg" style="background-color: var(--black);"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-label">Support</span>
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about playing at Paddle Social.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Do I need to be a member to play?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            No! While members receive benefits like discounted rates and early booking access, guests are always welcome to book courts or drop into open play.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Do I need to bring my own paddle and balls?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            You are welcome to bring your own equipment. However, we offer premium paddle rentals at the front desk, and high-quality outdoor/indoor balls are available for purchase or rent.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        What is your cancellation policy?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            Court reservations can be cancelled for a full refund up to 24 hours in advance. Cancellations made within 24 hours will not be refunded.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Can I bring my own coach?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-inner">
+                            Outside coaching is strictly prohibited. We have a roster of vetted, highly trained professionals available for lessons and clinics.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="margin-top: 0; border-top: none;">
+                &copy; 2026 Paddle Social. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
