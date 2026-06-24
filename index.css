@@ -455,7 +455,10 @@ a {
     grid-template-columns: 1fr;
   }
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-col:first-child {
+    grid-column: span 2;
   }
   .hero h1 {
     font-size: 40px;
